@@ -1,4 +1,4 @@
-# OpenShift Sidecar Logger
+# MariaDB Audit using the OpenShift Sidecar Logger
 
 ## Scenario
 
