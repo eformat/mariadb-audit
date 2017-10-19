@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: logging-sidecar
+data:
+  container_name: 'mariadb'
+  grep_pattern: '\d{8}\s\d{2}:\d{2}:\d{2},[a-z0-9_-]+,'
+  sleep_time: '20'
+  log_server_uri: 'http://localhost/datafeed'
+  feed_name_header: 'CSV_FEED'
+  system_name_header: 'EXAMPLE_SYSTEM'
+  env_name_header: 'EXAMPLE_ENVIRONMENT'
+  dedupe: 'true'
+  graceful_exit_time: '25'
+  startup_time: '15'

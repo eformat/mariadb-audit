@@ -1,0 +1,5 @@
+[mysqld]
+plugin_load=server_audit=server_audit.so
+server_audit_output_type=file
+server_audit_file_path=server_audit.log
+server_audit_logging='ON'
